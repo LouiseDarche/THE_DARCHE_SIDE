@@ -1,5 +1,6 @@
 <%= render "shared/navbar" %>
-<div class="banner">
+
+<div class="banner full-height full-image">
   <!-- background image -->
   <div class="banner-content">
     <h1 class="title">The Darche Side</h1>
@@ -7,11 +8,11 @@
     <%= link_to "Passez de l'autre côté", "#"  %>
   </div>
 </div>
-<div class="container">
 
-  <div class="vision">
+<div class="container">
+  <div class="vision full-height">
     <div class="centered-elements">
-      <div class="target">
+      <div class="target text-boxes">
         <div class="lora-text">Vous aspirez à devenir le nouvel Allbirds® ?</div>
         <div class="lora-text">Vous avez un projet et cherchez de l'aide pour vous propulser vers les sommets?</div>
         <div class="lora-text">Vous avez besoin d'un nouveau souffle dans votre aventure?</div>
@@ -20,32 +21,37 @@
         <%= image_tag "Polygon 1.png", alt: "yellow arrow", class: "yellow-arrow" %>
         <%= image_tag "Polygon 2.png", alt: "blue arrow", class: "blue-arrow" %>
       </div>
-      <div class="ambition">
+      <div class="ambition text-boxes">
         <h3>Mon ambition:</h3>
-        <p>vous accompagner dans vos <strong>problématiques digitales</strong> (marketing, communication, produit), vers l'infini et au-delà
-          <span>
+        <p>vous accompagner dans vos <strong>problématiques digitales</strong> (marketing, communication, produit), <br>vers l'infini et au-delà
+          <br><span>
             (©Buzz l'éclair)
           </span></p>
       </div>
     </div>
     <%= link_to "En savoir plus", "#", class: "black-button"  %>
   </div>
-  <div class="vision-second-part">
-    <div class="left-image"></div>
-    <div class="right-text-lora-italic">
-      <h2>Une autre vision du conseil : de la théorie à la pratique</h2>
-      <p>Des idées, c'est bien. Vous aider à les mettre en pratique, c'est mieux! Je propose une stratégie pour chacun de mes clients que j'accompagne jusqu'à la mise en place opérationnelle avec des outils adaptés.</p>
+
+  <div class="container-second-part">
+    <div class="vision-second-part">
+      <div class="left-image"></div>
+      <div class="right-text-lora-italic">
+        <h2>Une autre vision du conseil : de la <span>théorie</span> à la <span>pratique</span></h2>
+        <p>Des idées, c'est bien. Vous aider à les mettre en pratique, c'est mieux! Je propose une stratégie pour chacun de mes clients que j'accompagne jusqu'à la mise en place opérationnelle avec des outils adaptés.</p>
+      </div>
     </div>
+    <%= image_tag "3108764-200.png", id: "arrow", alt: "down-arrow" %>
   </div>
-  <%= image_tag "3108764-200.png", alt: "down-arrow" %>
 </div>
-<div class="yellow-background">
-  <div class="inner-container">
-    <div class="ultra-title">Mon champ d'intervention</div>
+
+<div class="yellow-background full-height">
+  <div class="container">
+    <h2 class="ultra-title">Mon champ d'intervention</h2>
     <div class="cards">
-      <div class="card">
+      <div class="card right-margin">
         <div class="top-elements">
           <h3>Construction</h3>
+          <div class="icon"></div>
           <%#= image_tag "#", alt: "alttext", class: "icon" %>
         </div>
         <div class="bottom-text">
@@ -57,9 +63,10 @@
           </ul>
         </div>
       </div>
-      <div class="card">
+      <div class="card right-margin">
         <div class="top-elements">
           <h3>Propulsion</h3>
+          <div class="icon"></div>
           <%#= image_tag "#", alt: "alttext", class: "icon" %>
         </div>
         <div class="bottom-text">
@@ -75,6 +82,7 @@
       <div class="card">
         <div class="top-elements">
           <h3>Mise en orbite</h3>
+          <div class="icon"></div>
           <%#= image_tag "#", alt: "alttext", class: "icon" %>
         </div>
         <div class="bottom-text">
@@ -90,7 +98,8 @@
     <%= link_to "Parlons de votre projet !", "#", class: "yellow-button" %>
   </div>
 </div>
-<div class="milky-banner">
+
+<div class="milky-banner full-height full-image">
   <h2>Ma feuille de route</h2>
   <div class="long-card">
     <div class="yellow-circle">1</div>
@@ -122,14 +131,17 @@
   </div>
   <%= link_to "Dessinons la vôtre", '#'  %>
 </div>
-<div class="container">
+
+<div class="container full-height">
   <h2>Derrière le masque</h2>
   <div class="bio">
     <p>Diplômée d'HEC avec un master en marketing et en digital, j'évolue depuis 8 ans dans un environnement international, entre grands groupes (Danone, Coty, Webedia) et startups à succès (Birchbox, Sézane). J'y ai développé une expertise en marketing, communication, gestion de projets et développement de marques, avec une spécialité pour les Direct to consumers brands et le marketing d'influence. En parallèle de mon activité (The Darche Side), j'assure des formations intensives (9 semaines) pour le développement d'applications web (Ruby on rails, HTML, CSS et JS) au sein du <%= link_to "Wagon", "www.lewagon.com", target: "_blank" %>. </p>
     <%= image_tag "profile.png", alt: "profile picture" %>
   </div>
 </div>
-<div class="contact-form">
 
+<div class="contact-form full-height full-image">
+  <h2 class="ultra-title">Contact</h2>
 </div>
+
 <%= render "shared/footer" %>
