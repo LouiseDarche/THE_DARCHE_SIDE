@@ -299,15 +299,15 @@
 }
 
 .long-card:nth-of-type(1) {
-  // margin-left: -6rem;
+  margin-left: -12rem;
 }
 
 .long-card:nth-of-type(2) {
-  margin-left: 4rem;
+  margin-left: -4rem;
 }
 
 .long-card:nth-of-type(3) {
-  margin-left: 8rem;
+  margin-left: 4rem;
 }
 
 .long-card:nth-of-type(4) {
@@ -342,4 +342,174 @@
     color: $dark-gray;
     font-weight: bold;
   }
+}
+
+#inner-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+
+  a {
+    color: white;
+    font-family: $special-font;
+    font-size: 16px;
+  }
+}
+
+
+// 5 - Bio
+#mask-title {
+  box-shadow: 0 10px $yellow;
+  width: 25rem;
+  margin-bottom: 3rem;
+}
+
+#profile-pic {
+  border-radius: 50%;
+  height: 12rem;
+  width: 12rem;
+  background-position: top;
+  background-image: asset-url("profile.png");
+  box-shadow: $box-shadow;
+}
+
+#bio-container {
+  text-align: center;
+}
+
+.bio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+  text-align: left;
+
+  p {
+    flex: 0 1 60%;
+    padding: 2rem 2rem 1rem 0;
+  }
+
+  a {
+    font-weight: 900;
+    color: black;
+  }
+}
+
+// 6 - contact form
+.contact-form {
+  background-image: linear-gradient(180deg, #020202 0%, rgba(13, 31, 191, 0.0260417) 97.4%, rgba(255, 255, 255, 0) 100%), asset-url("sky-earth-space-working.jpg");
+  height: calc(100vh - 60px);
+  // padding-top: 75px;
+
+  h2 {
+    padding-top: 100px;
+    color: white;
+    opacity: 0.8;
+  }
+}
+
+.contact-container {
+  display: flex;
+  min-height: 20rem;
+  margin: 2rem 0 0 0;
+  justify-content: space-between;
+}
+
+.half-screen {
+  flex: 1 0 30%;
+}
+.contact-information {
+  margin: 0 2rem 0 0;
+}
+
+.yellow-line {
+  border: solid $yellow;
+}
+
+.address-email {
+  padding: 3rem;
+  margin: 0 0 0 2rem;
+  background-color: white;
+  opacity: 0.7;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  margin: 0 0 1rem 0;
+}
+
+.location {
+  height: 40px;
+  width: 40px;
+  background-color: $gray;
+  border-radius: 50%;
+
+}
+
+.circle {
+  height: 40px;
+  width: 40px;
+  border: solid $dark-gray;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  i {
+    color: $dark-gray;
+  }
+}
+
+.address {
+  margin-left: 2rem;
+
+  a {
+    color: $dark-gray;
+    font-weight: bolder;
+  }
+}
+
+// contact form
+
+
+// body {
+//   background-color: black;
+//   color: white;
+// }
+.contact-form-text-area {
+  color: black;
+}
+.hidden { display: none; }
+.alert-error {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+  text-align: left;
+  font-size: .8em;
+}
+
+.alert-alert {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+  text-align: left;
+  font-size: .8em;
+}
+
+.alert-success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+  text-align: center;
+  font-size: .8em;
+}
+
+.alert-notice {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+  text-align: left;
+  font-size: .8em;
 }
