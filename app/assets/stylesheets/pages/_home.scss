@@ -2,7 +2,7 @@
 
 // Common designs
 .full-height {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .full-image {
@@ -21,7 +21,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  padding-bottom: 10rem;
 }
 
 .banner-content {
@@ -31,6 +30,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 5rem;
 
   .title {
     font-family: $special-font;
@@ -46,16 +46,16 @@
     margin-bottom: 0.5rem;
   }
 
-  a {
-    box-shadow: $box-shadow;
-    padding: 0.6rem 1rem;
-    background-color: yellow;
-    border-radius: $border-radius;
-    color: black;
-    font-family: $body-font;
-    font-weight: 600;
-    margin: 1rem;
-  }
+}
+.yellow-button {
+  box-shadow: $box-shadow;
+  padding: 0.6rem 1rem;
+  background-color: yellow;
+  border-radius: $border-radius;
+  color: black;
+  font-family: $body-font;
+  font-weight: 600;
+  margin: 1rem;
 }
 
 // 2 - vision
@@ -202,7 +202,7 @@
 // 3. action-plan
 .yellow-background {
   background: #F3F1D1;
-  padding-top: 70px;
+  text-align: center;
 
   h2 {
     box-shadow: 0 10px $dark-gray;
@@ -210,15 +210,18 @@
 }
 
 .ultra-title {
+  padding-top: 70px;
   font-family: $special-font;
   font-size: 32px;
   color: $black;
+  text-align: left;
 }
 
 .cards {
   margin: 2rem 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -226,6 +229,11 @@
   display: flex;
   align-items: center;
   padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: $box-shadow;
+  text-align: left;
+  // min-height: 30rem;
 }
 
 .right-margin {
@@ -236,6 +244,8 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin-bottom: $margin-bottom-text;
+  flex-wrap: wrap;
 
   h3 {
     font-family: $body-font;
@@ -251,4 +261,85 @@
   width: 40px;
   border-radius: 50%;
   background-color: $light-gray;
+}
+
+.italic-lora {
+  margin-bottom: $margin-bottom-text;
+  font-family: $headers-font;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.bold-centered-lora {
+  font-family: $headers-font;
+  font-weight: bold;
+}
+
+// 4 - feuille de route
+.milky-banner {
+  background-image: asset-url("milky.jpeg");
+
+  h2 {
+    color: $white;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+  }
+}
+
+.long-cards {
+  display: inline-block;
+}
+
+.long-card {
+  margin-bottom: $margin-bottom-text;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  // min-height: 8rem;
+}
+
+.long-card:nth-of-type(1) {
+  // margin-left: -6rem;
+}
+
+.long-card:nth-of-type(2) {
+  margin-left: 4rem;
+}
+
+.long-card:nth-of-type(3) {
+  margin-left: 8rem;
+}
+
+.long-card:nth-of-type(4) {
+  margin-left: 12rem;
+}
+
+.yellow-circle {
+  font-family: $special-font;
+  color: $black;
+  font-size: 30px;
+  background-color: #FFF852;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: $box-shadow;
+  margin-top: -1rem;
+  margin-left: -2rem;
+  z-index: 1;
+}
+
+.white-transparent-rectangle {
+  background-color: $white;
+  opacity: 0.7;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  width: 50rem;
+
+  h3 {
+    color: $dark-gray;
+    font-weight: bold;
+  }
 }
