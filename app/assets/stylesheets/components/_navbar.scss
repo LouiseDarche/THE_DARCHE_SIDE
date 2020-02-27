@@ -23,9 +23,27 @@
   height: 70px;
   background-color: transparent;
   justify-content: space-between;
+  transition: 0.5s background-color ease;
   position: fixed;
   width: 100%;
   top: 0;
+  color: $white;
+
+  a {
+    color: $white;
+  }
+}
+
+
+
+.navbar-white {
+  background-color: $white;
+  color: $black;
+  box-shadow: $box-shadow !important;
+
+  a {
+    color: $black;
+  }
 }
 
 .navbar-links {
@@ -39,7 +57,7 @@
   a {
     margin: 0 2%;
     padding: 0.2em 0.7em;
-    color: $white;
+    // color: $white;
     font-family: $body-font;
     font-size: 18px;
     font-weight: 900;
@@ -69,5 +87,6 @@
 #logo {
   font-family: $special-font;// background-image: asset-url("logo.png")
   // width: 40%;
-  color: $white;
+  // color: $white;
+  font-size: 18px;
 }

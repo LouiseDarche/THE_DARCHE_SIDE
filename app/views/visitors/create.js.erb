@@ -1,0 +1,16 @@
+function refreshForm(innerHTML) {
+  const newReviewForm = document.getElementById('new_visitor');
+  newReviewForm.scrollIntoView();
+  newReviewForm.innerHTML = innerHTML;
+}
+
+// function addReview(reviewHTML) {
+//   const reviews = document.getElementById('reviews');
+//   reviews.insertAdjacentHTML('beforeend', reviewHTML);
+// }
+
+<% if @visitor.errors.any? %>
+  refreshForm('<%= j render "shared/form", visitor: @visitor %>');
+<% else %>
+  refreshForm('<%= j render "shared/form", visitor: @visitor %>');
+<% end %>
