@@ -5,10 +5,11 @@
   <div class="banner-content">
     <h1 class="title">The Darche Side</h1>
     <div class="tagline">Conseil en stratégie(s) digitale(s) et e-commerce</div>
-    <%= link_to "Passez de l'autre côté", "#", class: "yellow-button"  %>
+    <%= link_to "Passez de l'autre côté", root_path(anchor: "vision"), class: "yellow-button"  %>
   </div>
 </div>
 
+<a name="vision"></a>
 <div class="container">
   <div class="vision full-height">
     <div class="centered-elements">
@@ -29,7 +30,7 @@
           </span></p>
       </div>
     </div>
-    <%= link_to "En savoir plus", "#", class: "black-button"  %>
+    <%= link_to "En savoir plus", root_path(anchor: "approche"), class: "black-button"  %>
   </div>
 
   <div class="container-second-part">
@@ -44,6 +45,7 @@
   </div>
 </div>
 
+<a name="approche"></a>
 <div class="yellow-background full-height">
   <div class="container">
     <h2 class="ultra-title">Mon champ d'intervention</h2>
@@ -51,7 +53,9 @@
       <div class="card right-margin">
         <div class="top-elements">
           <h3>Construction</h3>
-          <div class="icon"></div>
+          <!-- <div class="icon"> -->
+            <i class="fas fa-tools icon"></i>
+          <!-- </div> -->
           <%#= image_tag "#", alt: "alttext", class: "icon" %>
         </div>
         <div class="bottom-text">
@@ -66,7 +70,9 @@
       <div class="card right-margin">
         <div class="top-elements">
           <h3>Propulsion</h3>
-          <div class="icon"></div>
+          <!-- <div class="icon"> -->
+            <i class="fas fa-rocket icon"></i>
+          <!-- </div> -->
           <%#= image_tag "#", alt: "alttext", class: "icon" %>
         </div>
         <div class="bottom-text">
@@ -82,7 +88,9 @@
       <div class="card">
         <div class="top-elements">
           <h3>Mise en orbite</h3>
-          <div class="icon"></div>
+          <!-- <div class="icon"> -->
+            <i class="fas fa-meteor icon"></i>
+          <!-- </div> -->
           <%#= image_tag "#", alt: "alttext", class: "icon" %>
         </div>
         <div class="bottom-text">
@@ -95,7 +103,7 @@
         </div>
       </div>
     </div>
-    <%= link_to "Parlons de votre projet !", "#", class: "yellow-button" %>
+    <%= link_to "Parlons de votre projet !", root_path(anchor: "contact_form"), class: "yellow-button" %>
   </div>
 </div>
 
@@ -136,10 +144,11 @@
     </div>
   </div>
   <div id="inner-link">
-    <%= link_to "Dessinons la vôtre", '#'  %>
+    <%= link_to "Dessinons la vôtre", root_path(anchor: "contact_form")  %>
   </div>
 </div>
 
+<a name="profil"></a>
 <div class="container full-height" id="bio-container">
   <h2 class="ultra-title" id="mask-title">Derrière le masque</h2>
   <div class="bio">
@@ -147,7 +156,7 @@
     <div id="profile-pic" class="full-image" alt="Louise Darche"></div>
     <%#= image_tag "profile.png", alt: "profile picture" %>
   </div>
-  <%= link_to "Rencontrons-nous 🚀", "#", class: "yellow-button"  %>
+  <%= link_to "Rencontrons-nous 🚀", root_path(anchor: "contact_form"), class: "yellow-button"  %>
 </div>
 
 <a name="contact_form"></a>

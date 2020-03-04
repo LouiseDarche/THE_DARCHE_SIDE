@@ -1,10 +1,10 @@
 <div class="navbar">
   <div id="logo">The Darche Side</div>
   <div class="navbar-links">
-    <%= link_to "Vision", "#" %>
-    <%= link_to "Approche", "#" %>
-    <%= link_to "Qui suis-je", "#" %>
-    <%= link_to "Contact", "#", class: "navbar-button" %>
+    <%= link_to "Vision", root_path(anchor: "vision") %>
+    <%= link_to "Approche", root_path(anchor: "approche") %>
+    <%= link_to "Qui suis-je", root_path(anchor: "profil") %>
+    <%= link_to "Contact", root_path(anchor: "contact_form"), class: "navbar-button" %>
   </div>
 </div>
 
