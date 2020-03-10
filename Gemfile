@@ -15,6 +15,7 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 gem 'turbolinks', '~> 5.2.0'
+gem 'letter_opener', group: :development
 
 # gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 # gem 'mail_form'
