@@ -7,8 +7,6 @@ class VisitorsController < ApplicationController
   def create
     @visitor = Visitor.new(visitor_params)
     if @visitor.save
-      # mail = VisitorMailer.with(visitor: @visitor).notification(@visitor)
-      # mail.deliver_now
       respond_to do |format|
         format.html { redirect_to root_path(anchor: "contact_form") }  # root_path(anchor: "contact_form")
         format.js  # <-- will render `app/views/visitors/create.js.erb`
