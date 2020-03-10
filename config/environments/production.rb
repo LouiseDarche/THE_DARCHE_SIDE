@@ -74,8 +74,8 @@ Rails.application.configure do
   #   address:              'smtp.gmail.com',
   #   port:                 587,
   #   domain:               'thedarcheside.herokuapp.com',
-  #   user_name:            ENV["GMAIL_EMAIL"],
-  #   password:             ENV["GMAIL_PASSWORD"],
+  #   user_name:            ENV["GMAIL_ADDRESS"],
+  #   password:             ENV["GMAIL_APP_PASSWORD"],
   #   authentication:       'plain',
   #   enable_starttls_auto: true  }
 
