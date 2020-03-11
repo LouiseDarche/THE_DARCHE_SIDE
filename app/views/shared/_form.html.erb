@@ -1,7 +1,7 @@
 <%= simple_form_for(visitor, remote: true) do |f| %>
   <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
-  <%= f.input :name %>
-  <%= f.input :mail %>
-  <%= f.input :message, as: :text %>
-  <%= f.button :submit %>
+  <%= f.input :name, label: "Votre nom :", error: "J'ai besoin de connaître votre nom 🙃" %>
+  <%= f.input :mail, label: "Votre mail :", error: "Promis, je ne vous spammerai pas, c'est juste pour vous répondre!" %>
+  <%= f.input :message, label: "Laissez-moi un message :", error: "Un message vous devez laisser", as: :text %>
+  <%= f.button :submit, "Soumettre", class: "black-button" %>
 <% end %>

@@ -451,13 +451,24 @@ html {
   margin: 0 2rem 0 0;
 }
 
+#new_visitor {
+  label {
+    color: $white;
+  }
+
+  abbr {
+    color: transparent;
+  }
+}
+
 .yellow-line {
   border: solid $yellow;
+  margin: 0 2rem 0 2rem;
 }
 
 .address-email {
   padding: 3rem;
-  margin: 0 0 0 2rem;
+  // margin: 0 0 0 2rem;
   background-color: white;
   opacity: 0.7;
 }
