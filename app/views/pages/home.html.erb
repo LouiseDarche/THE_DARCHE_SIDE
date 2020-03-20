@@ -156,23 +156,40 @@
     <div id="profile-pic" class="full-image" alt="Louise Darche"></div>
     <%#= image_tag "profile.png", alt: "profile picture" %>
   </div>
-  <%= link_to "Rencontrons-nous 🚀", root_path(anchor: "contact_form"), class: "yellow-button"  %>
+  <a name="contact_form"></a>
+  <div class="address-email half-screen">
+    <div class="left-info">
+      <div class="info">
+        <div class="circle"><i class="fas fa-map-marker-alt"></i></div>
+        <div class="address">Paris, France</div>
+      </div>
+      <div class="info">
+        <div class="circle"><i class="fas fa-envelope"></i></div>
+        <div class="address"><%= mail_to "contact@thedarcheside.com" %></div>
+      </div>
+
+    </div>
+    <%= mail_to "contact@thedarcheside.com", class: "yellow-button" do %>
+      Rencontrons-nous 🚀
+    <% end %>
+    <%#= link_to "Rencontrons-nous 🚀", root_path(anchor: "contact_form"), class: "yellow-button"  %>
+  </div>
 </div>
 
-<a name="contact_form"></a>
+<!-- <a name="contact_form"></a>
 <div class="contact-form full-image">
   <div class="container">
     <h2 class="ultra-title">Contact</h2>
     <div class="contact-container">
       <div class="contact-information half-screen">
-        <%= render "shared/form", visitor: @visitor %>
+        <%#= render "shared/form", visitor: @visitor %>
         <div class="contact-form-inputs">
           <div class="input" id="name-input"></div>
           <div class="input" id="email-input"></div>
           <div class="input" id="message-input"></div>
         </div>
-        <!-- <div class="black-button">Soumettre</div> -->
-        <%= @notification %>
+        <div class="black-button">Soumettre</div>
+        <%#= @notification %>
       </div>
       <div class="yellow-line"></div>
       <div class="address-email half-screen">
@@ -182,11 +199,11 @@
         </div>
         <div class="info">
           <div class="circle"><i class="fas fa-envelope"></i></div>
-          <div class="address"><%= mail_to "contact@thedarcheside.com" %></div>
+          <div class="address"><%#= mail_to "contact@thedarcheside.com" %></div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
+ -->
 <%= render "shared/footer" %>
