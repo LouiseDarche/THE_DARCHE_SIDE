@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>La liste de toutes les requêtes</h1>
+  <table class="exemple">
+  <tr>
+    <td width="7em">Nom</td>
+    <td width="7em">Envoyé le </td>
+    <td width="7em">Message</td>
+    <td width="7em">Mail</td>
+  </tr>
+  <% @visitors.each do |visitor| %>
+    <tr>
+      <td><%= visitor.name %></td>
+      <td><%= visitor.created_at%></td>
+      <td><%= visitor.message %></td>
+      <td><%= mail_to visitor.mail %></td>
+    </tr>
+  <% end %>
+</table>
+
+
+</div>

@@ -1,5 +1,9 @@
 class VisitorsController < ApplicationController
 
+  def index
+    @visitors = Visitor.all
+  end
+
   def new
     @visitor = Visitor.new
   end
@@ -12,6 +16,7 @@ class VisitorsController < ApplicationController
         format.js  # <-- will render `app/views/visitors/create.js.erb`
       end
     else
+      raise
       respond_to do |format|
         format.html { render 'pages/home' }
         format.js  # <-- idem

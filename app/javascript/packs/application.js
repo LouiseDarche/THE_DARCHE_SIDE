@@ -9,10 +9,10 @@ initUpdateNavbarOnScroll();
 import { loadDynamicBannerText } from '../components/banner';
 loadDynamicBannerText();
 
-import { initSweetalert } from '../plugins/init_sweetalert';
+import { initSweetalert } from '../components/init_sweetalert';
 
 initSweetalert('#sweet-alert', {
-  title: "A nice alert",
-  text: "Votre message a bien été transmis!",
+  title: "Message envoyé!",
+  text: "Merci pour votre message, nous vous répondrons dans les plus brefs délais!",
   icon: "success"
 });
