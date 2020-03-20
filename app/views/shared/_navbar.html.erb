@@ -6,5 +6,17 @@
     <%= link_to "Qui suis-je", root_path(anchor: "profil") %>
     <%= link_to "Contact", root_path(anchor: "contact_form"), class: "navbar-button" %>
   </div>
+  <div class="dropdown dropleft">
+    <button type="button" class="burger" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="dropdown-menu mobile-navbar-links" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#vision">Vision</a>
+      <a class="dropdown-item" href="#approche">Approche</a>
+      <a class="dropdown-item" href="#profil">Qui suis-je</a>
+      <a class="dropdown-item" href="#contact_form">Contact</a>
+    </div>
+  </div>
+  <!-- <div id="burger"><i class="fas fa-bars"></i></div> -->
 </div>
 
